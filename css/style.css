@@ -214,7 +214,7 @@ a:after {
 .media .media-content {
   overflow: hidden;
 }
-/* media
+/* bottom-content-wrapper
 -----------------------------------------------------------------------------*/
 .bottom-content-wrapper {
   position: relative;
@@ -717,7 +717,7 @@ textarea.form-control {
   height: 50px;
   line-height: 50px;
   color: #fff;
-  font-weight: 800;
+  font-weight: 900;
   text-transform: uppercase;
   z-index: 1;
   border: 0;
@@ -859,6 +859,46 @@ textarea.form-control {
   transition: none;
   vertical-align: top;
   margin: 7px 0 0 10px;
+}
+.icon-block.icon-promo-gift {
+  width: 21px;
+  height: 22px;
+  margin: 0 10px 0 0;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAsCAYAAACKYvPzAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NTc3MiwgMjAxNC8wMS8xMy0xOTo0NDowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjRCNENDNTczQjk2NjExRTVBQ0QyQTY1RUY4N0I1MUZEIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjRCNENDNTc0Qjk2NjExRTVBQ0QyQTY1RUY4N0I1MUZEIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NEI0Q0M1NzFCOTY2MTFFNUFDRDJBNjVFRjg3QjUxRkQiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NEI0Q0M1NzJCOTY2MTFFNUFDRDJBNjVFRjg3QjUxRkQiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5oPkZoAAABYElEQVR42uxVu5HCMBAVHjdgOjiSS8hMCVwJuARTgigBR8RQAm6BEo7oCCDA1wEq4U4788QswvIHOSDQm3mz9sra2Z93Rz/nSjQg0VRN+unnx9Nh5DCWan5r3iDTFv0DRjWeTnAhYTryqtCUNfqZ9rZq83SBi6XmGJLe1w79wjYQW3l6CafLb4L8KhM+Kfaac+GPg2ZG4ecDGRSwk0cs7AK54jwyD8aQAnr728Kk0S6UYpRoGXrOcJ7hPcW5ojyaXLb16RyXCEtU+Aa5hF660hY7jB7RMhVkzs5KhDph6elklIdM2CGfpslXTdWKOlaVPL1aHnsb7YW443d2+CKE39moa1JR02/R+KU1oWqNKvaHyBYntmATVMRCEwONvp3x9MtnSBvch7TY/Hlt0z4t5bdNazztvU3tVnvfbcru3gsVtunr25QxbNOwTkL43tvUNaQlZuVQWL3/NjWD5V+AAQDugJt07dwFugAAAABJRU5ErkJggg==");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  transition: none;
+}
+.icon-block.icon-information-link {
+  width: 21px;
+  height: 22px;
+  margin: 0 10px 0 0;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAsCAYAAACKYvPzAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NTc3MiwgMjAxNC8wMS8xMy0xOTo0NDowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjdDQjcyRUE0Qjk2NjExRTVCQTZGOTlCNTU5MjQyQzk5IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjdDQjcyRUE1Qjk2NjExRTVCQTZGOTlCNTU5MjQyQzk5Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6N0NCNzJFQTJCOTY2MTFFNUJBNkY5OUI1NTkyNDJDOTkiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6N0NCNzJFQTNCOTY2MTFFNUJBNkY5OUI1NTkyNDJDOTkiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7v/pBUAAABvklEQVR42uxVwXGDMBAUGhogJZASSAlQQigBf/OLS3BeyRdaSAmmBPzKxx8oISrBOc2smLMiC7BMZjKJZm7sQXen1Z7uNvo4DmLGSth/NeUsPXsZWU3WkX0y6/A9uxQYOZAmCHqccYN3so2NXjrQ9UioEFSS3TEr8V3Br7dRc6R6Yw+kLRD4CE9xoxwHFGQHG2mNhA0cBk+xBPYL+BvKzq7/DKTacetAtUORdo69LeIy5BmTVvh9mfNkrKUQN+bRnObgUp92P/FWfQf24LmQrHIHEbZMfCZZAXyV9nEqrPhEihWWZDylgblMvJKci8CkY20kumfASdWVCSvE6zyt4bRhTZAsTJiYR2/y8N7vcIUGfT/3ndZAqml8sHvfjLAKzZA6OscuzB7+igOJrcdbwDEH8hZjrmV+OUZeztAXvHlWGdLxhQFRgt8Kv5l1owO4d7Z2PNHLm2uELxKvpyA1PT39lJo6kC4uFKG9vZpGb5aaMqTBakqIf4maEg23UVMU6VxNidMgNTXvlFD+q+mfVFOq/Kim9BrC1ZQSfldT1vvBakoo11NTe57ySaWWqKmZUKsN6WA1dWnUKmr6JcAATJDaNlJfcnkAAAAASUVORK5CYII=");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  transition: none;
+}
+.btn-link-md {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 45px;
+  margin-right: 35px;
+  color: #9fa7b3;
+  text-decoration: none;
+  vertical-align: middle;
+  display: inline-block;
+}
+.btn-link-md:hover {
+  color: #525c69;
+  text-decoration: underline;
+}
+.btn-link-md:hover .icon-promo-gift,
+.btn-link-md:hover .icon-information-link {
+  background-position: 0 -22px;
 }
 .form-row + .form-row {
   margin-top: 19px;
@@ -3089,7 +3129,7 @@ html {
 }
 .title-section-wrapper {
   background-color: #525c69;
-  padding: 16px 0 16px;
+  padding: 15px 0 17px;
 }
 .title-section-wrapper .text-wrap,
 .title-section-wrapper .icon-img {
@@ -3112,7 +3152,7 @@ html {
   position: absolute;
   content: '';
   left: 31px;
-  bottom: -18px;
+  bottom: -17px;
   width: 0;
   height: 0;
   border-color: transparent;
@@ -3120,7 +3160,7 @@ html {
   -webkit-transform: rotate(360deg);
       -ms-transform: rotate(360deg);
           transform: rotate(360deg);
-  border-width: 0 7px 7px 7px;
+  border-width: 0 8px 8px 8px;
   border-bottom-color: #f7f7f7;
   border-left-color: transparent;
   border-right-color: transparent;
@@ -4030,6 +4070,9 @@ This file is generated by `grunt build`, do not edit it by hand.
 .page-content.error-wrapper {
   padding: 57px 0 150px 0;
 }
+.page-content.page-content-default {
+  padding: 30px 0 60px;
+}
 .page-contact {
   background-image: url("img/contacts-page-bg.jpg");
   background-position: center center;
@@ -4117,5 +4160,93 @@ This file is generated by `grunt build`, do not edit it by hand.
   background-position: center center;
   background-repeat: no-repeat;
   text-indent: -9999px;
+}
+.cart-table-container table {
+  margin-bottom: 17px;
+  border: 1px solid #d3d8de;
+  border-radius: 5px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  color: #9fa7b3;
+  width: 100%;
+}
+.cart-table-container th,
+.cart-table-container td {
+  width: 10%;
+  text-align: center;
+  box-sizing: border-box;
+}
+.cart-table-container th:first-child,
+.cart-table-container td:first-child {
+  width: 60%;
+  text-align: left;
+  padding-left: 30px;
+}
+.cart-table-container th {
+  font-family: 'lato', Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 900;
+  font-size: 14px;
+  padding: 13px 10px 18px 10px;
+  background-color: #525c69;
+  color: #9fa7b3;
+}
+.cart-table-container th:first-child {
+  border-radius: 5px 0 0 0;
+}
+.cart-table-container th:last-child {
+  border-radius: 0 5px 0 0;
+}
+.cart-table-container th.footer-cell {
+  padding: 13px 0 14px;
+}
+.cart-table-container th.footer-cell:first-child {
+  border-radius: 0 0 0 5px;
+}
+.cart-table-container th.footer-cell:last-child {
+  border-radius: 0 0 5px 0;
+}
+.cart-table-container td {
+  padding: 26px 10px 24px 10px;
+  vertical-align: middle;
+  border-bottom: 1px solid #d3d8de;
+}
+.cart-table-container .title-block {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+.cart-table-container .title-block a {
+  text-decoration: none;
+  color: #525c69;
+}
+.cart-table-container .title-block a:hover {
+  color: #008eff;
+}
+.cart-table-container .date-wrap {
+  font-family: 'lato', Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 11px;
+  padding: 0 10px;
+  border-radius: 3px;
+  font-weight: 400;
+  display: inline-block;
+  color: #fff;
+  background-color: #99ca42;
+}
+.cart-table-container .price-wrap {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: #525c69;
+}
+.cart-table-container .total-price-block {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 13px;
+  color: #9fa7b3;
+  font-weight: 400;
+}
+.cart-table-container .total-price-block .number-wrap {
+  font-weight: 700;
+  color: #ffffff;
 }
 /*# sourceMappingURL=style.css.map */

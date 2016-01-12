@@ -195,7 +195,7 @@ textarea.form-control {
     height: 50px;
     line-height: 50px;
     color: #fff;
-    font-weight: 800;
+    font-weight: 900;
     text-transform: uppercase;
     z-index: 1;
     border: 0;
@@ -338,8 +338,47 @@ textarea.form-control {
     vertical-align: top;
     margin: 7px 0 0 10px;
   }
+  &.icon-promo-gift {
+    width: 21px;
+    height: 22px;
+    margin: 0 10px 0 0;
+    background-image: data-uri(@base64-png, "../../css/img/icon-promo-gift.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    .tn(none);
+  }
+  &.icon-information-link {
+    width: 21px;
+    height: 22px;
+    margin: 0 10px 0 0;
+    background-image: data-uri(@base64-png, "../../css/img/icon-information-link.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    .tn(none);
+  }
 }
-
+.btn-link-md {
+  .arial;
+  font-size: 14px;
+  line-height: 45px;
+  margin-right: 35px;
+  color: @linkGray;
+  text-decoration: none;
+  vertical-align: middle;
+  display: inline-block;
+  &:hover {
+    color: @darkGray;
+    text-decoration: underline;
+    .icon-promo-gift,
+    .icon-information-link {
+      background-position: 0 -22px;
+    }
+  }
+}
 .form-row {
   +.form-row {
     margin-top: 19px;
