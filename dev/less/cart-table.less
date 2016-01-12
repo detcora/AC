@@ -1,7 +1,6 @@
 .cart-table-container {
   table {
     margin-bottom: 17px;
-    border: 1px solid @borderGray;
     border-radius: 5px;
     .arial;
     font-size: 12px;
@@ -47,6 +46,12 @@
     padding: 26px 10px 24px 10px;
     vertical-align: middle;
     border-bottom: 1px solid @borderGray;
+    &:first-child {
+      border-left: 1px solid @borderGray;
+    }
+    &:last-child {
+      border-right: 1px solid @borderGray;
+    }
   }
   .title-block {
     .arial;
