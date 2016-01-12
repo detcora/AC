@@ -1,0 +1,148 @@
+.parts-catalogue-nav {
+  background-color: @darkGray;
+  .pr;
+  z-index: 1;
+  padding-bottom: 80px;
+  &:before {
+    z-index: -1;
+    .pa;
+    content: '';
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 60px;
+    background-color: @borderGray;
+  }
+}
+.catalog-nav {
+  display: table;
+  width: 100%;
+  .pr;
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: table-row;
+  }
+  li {
+    display: table-cell;
+    text-align: center;
+    + li {
+      padding-left: 60px;
+    }
+    &.active,
+    &:hover {
+      a {
+        display: block;
+        background-color: @darkGray;
+        color: #ffffff;
+        .icon-catalog-block {
+          background-color: @mainBlue;
+          &.green-bg {
+            background-color: @mainGreen;
+          }
+          &.orange-bg {
+            background-color: @mainOrange;
+          }
+          img {
+            .op(1);
+          }
+        }
+      }
+      li {
+        a {
+          color: @mainGray;
+          &:hover {
+            color: #ffffff;
+          }
+        }
+      }
+    }
+    &.active {
+      ul {
+        display: block;
+      }
+    }
+    a {
+      font-weight: 700;
+      font-size: 17px;
+      text-transform: uppercase;
+      text-decoration: none;
+      display: block;
+      padding: 10px 0;
+      color: @linkGray;
+      .icon-catalog-block {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 20px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: @linkGray;
+        img {
+          .op(0.5);
+        }
+      }
+      .text-wrap {
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+
+    //submenu
+
+    ul {
+      .pa;
+      left: 0;
+      top: 100%;
+      display: none;
+      text-align: justify;
+      line-height: 0;
+      font-size: 1px;
+      text-justify: newspaper;
+      zoom: 1;
+      text-align-last: justify;
+      width: 100%;
+      &:after {
+        width: 100%;
+        height: 0px;
+        visibility: hidden;
+        overflow: hidden;
+        content: '';
+        display: inline-block;
+      }
+    }
+    li {
+      display: inline-block;
+      line-height: normal;
+      vertical-align: top;
+      + li {
+        padding-left: 0;
+      }
+      &.bg-dark-blue {
+        a {
+          background-color: @darkBlue;
+        }
+      }
+      a {
+        font-weight: 400;
+        color: @mainGray;
+        font-size: 14px;
+        line-height: 29px;
+        text-transform: none;
+        padding: 23px 10px 26px;
+        &:hover {
+          color: #fff;
+          .icon-block {
+            .op(1);
+          }
+        }
+        .icon-block {
+          display: inline-block;
+          margin-right: 10px;
+          .op(0.3);
+        }
+      }
+    }
+  }
+}

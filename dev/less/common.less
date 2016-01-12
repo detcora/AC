@@ -1,0 +1,92 @@
+/* Common classes
+-----------------------------------------------------------------------------*/
+.clear {
+  clear: both;
+}
+.clear-fix {
+  &:after {
+    content: '';
+    clear: both;
+    display: table;
+    width: 100%;
+  }
+}
+.webkit-flicker-fix {
+  -webkit-backface-visibility: hidden;
+}
+.webkit-border-radius-fix {
+  -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
+  .webkit-flicker-fix;
+}
+
+/* positioning
+-----------------------------------------------------------------------------*/
+.pa {
+  position: absolute;
+}
+.pr {
+  position: relative;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+
+/* sizing
+-----------------------------------------------------------------------------*/
+.full-width {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* transitions
+-----------------------------------------------------------------------------*/
+a, a *, a:before, a:after {
+  .tn();
+}
+
+/* media
+-----------------------------------------------------------------------------*/
+.media {
+  overflow: hidden;
+  .media-element {
+    &.gutter-standart {
+      &.fl {
+        margin: 0 30px 0 0;
+      }
+      &.fr {
+        margin: 0 0 0 30px;
+      }
+    }
+    &.fl {
+      .fl;
+      margin: 0 15px 0 0;
+    }
+    &.fr {
+      .fr;
+      margin: 0 0 0 15px;
+    }
+  }
+  .media-content {
+    overflow: hidden;
+  }
+}
+
+/* media
+-----------------------------------------------------------------------------*/
+.bottom-content-wrapper {
+  .pr;
+  z-index: 1;
+  &:before {
+    .pa;
+    content: '';
+    z-index: -1;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 115px;
+    background-color: @lightGray;
+  }
+}

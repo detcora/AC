@@ -1,0 +1,164 @@
+.slider-wrapper {
+  overflow: hidden;
+}
+.main-slider {
+  padding: 30px 0 18px;
+  width: 1920px;
+  .pr;
+  left: 50%;
+  margin-left: -960px;
+  .slide {
+    text-align: center;
+    font-size: 0;
+    &.slick-center {
+      .text-block {
+        .op(1);
+      }
+      img {
+        .op(1);
+      }
+    }
+  }
+  .slide-container {
+    .pr;
+    display: inline-block;
+    background-color: @darkBlue;
+  }
+  .text-block {
+    .pa;
+    .tn;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 400px;
+    border-radius: 5px 0 0 5px;
+    text-align: left;
+    padding: 86px 40px 0;
+    .bxz;
+    .op(0);
+    z-index: 1;
+    &:before {
+      .pa;
+      content: '';
+      background-color: @darkBlue;
+      .op(0.8);
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      z-index: -1;
+    }
+  }
+  img {
+    display: block;
+    margin: 0 auto;
+    max-width: none;
+    .op(0.7);
+    .tn;
+  }
+  .title-wrap {
+    font-size: 36px;
+    line-height: 36px;
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+  .update-wrap {
+    font-size: 14px;
+    color: #fff;
+    display: inline-block;
+    border-left: 4px solid @mainGreen;
+    background-color: @mainGray;
+    padding: 2px 15px 7px 11px;
+    border-radius: 3px;
+    margin-bottom: 34px;
+  }
+
+  .slick-dots {
+    padding: 26px 0 0;
+    margin: 0;
+    list-style: none;
+    font-size: 0;
+    text-align: center;
+    li {
+      display: inline-block;
+      margin: 0 2px;
+      &.slick-active {
+        button {
+          background-color: @darkGray;
+        }
+      }
+    }
+    button {
+      border: 0;
+      background-color: @borderGray;
+      text-indent: -9999px;
+      width: 64px;
+      height: 4px;
+      display: block;
+      .tn;
+    }
+  }
+}
+.main-slider-controls {
+  .pr;
+  .slick-control {
+    text-indent: -9999px;
+    .pa;
+    bottom: 37px;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 0;
+    outline: 0;
+    box-shadow: 0px 3px 10px 0px rgba(82, 92, 105, 0.1);
+    &:before {
+      .pa;
+      content: '';
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      box-shadow: 0px 3px 10px 0px rgba(82, 92, 105, 0.3);
+      border-radius: 50%;
+      .tn;
+      .op(0);
+    }
+    &:after {
+      .pa;
+      content: '';
+      background-image: data-uri(@base64-png, '../../css/img/arrows-slider-sprite.png');
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      width: 11px;
+      height: 18px;
+      left: 50%;
+      top: 50%;
+      margin: -9px 0 0 -6px;
+    }
+    &:hover {
+      box-shadow: 0px 3px 10px 0px rgba(82, 92, 105, 0);
+      &:before {
+        .op(1);
+      }
+      &:after {
+        background-position: 0 -18px;
+      }
+    }
+    &.btn-prev {
+      left: 60px;
+    }
+    &.btn-next {
+      left: 140px;
+      &:after {
+        background-position: -11px 0;
+      }
+      &:hover {
+        &:after {
+          background-position: -11px -18px;
+        }
+      }
+    }
+  }
+}
